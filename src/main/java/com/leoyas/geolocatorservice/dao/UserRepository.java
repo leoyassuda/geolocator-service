@@ -1,7 +1,9 @@
 package com.leoyas.geolocatorservice.dao;
 
 import com.leoyas.geolocatorservice.model.User;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+import org.springframework.stereotype.Repository;
 
-public interface UserRepository extends MongoRepository<User, Long> {
+@Repository
+public interface UserRepository extends ReactiveMongoRepository<User, String> {
 }

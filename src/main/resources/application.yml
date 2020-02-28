@@ -1,0 +1,37 @@
+spring:
+  profiles:
+    active: local
+  boot:
+    admin:
+      routes:
+        endpoints: env,metrics,trace,jolokia,info,configprops
+      client:
+        url: http://localhost:8080
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/geolocator
+  datasource:
+    initialization-mode: always
+#      auto-index-creation: false
+server:
+  error:
+    include-stacktrace: ON_TRACE_PARAM
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+logging:
+  file:
+    name: logs/application.log
+---
+spring:
+  profiles: test
+  data:
+    mongodb:
+      uri: mongodb://root:root@localhost:27017/test_geolocator
+#      auto-index-creation: false
+enviroment: test

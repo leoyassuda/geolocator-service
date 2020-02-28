@@ -1,0 +1,20 @@
+[
+  {
+    "_class": "com.leoyas.geolocatorservice.model.User",
+    "firstName": "Leo",
+    "lastName": "Yassuda",
+    "email": "leo.yassuda@rouf.com"
+  },
+  {
+    "_class": "com.leoyas.geolocatorservice.model.User",
+    "firstName": "Gui",
+    "lastName": "Alves",
+    "email": "gui.alves@rouf.com"
+  },
+  {
+    "_class": "com.leoyas.geolocatorservice.model.User",
+    "firstName": "Omar",
+    "lastName": "Buchain",
+    "email": "omar.buchain@rouf.com"
+  }
+]
